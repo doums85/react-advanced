@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--mb-2);
+  margin-bottom: 3rem;
+}
+
+.pagination__next,
+.pagination__prev,
+.pagination__item {
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.pagination__next,
+.pagination__prev,
+.pagination__active {
+  background-color: var(--first-color);
+  color: var(--body-color);
+  cursor: pointer;
+}
+
+.pagination__prev.inactive,
+.pagination__next.inactive {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.pagination__active {
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination__item--link {
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.select__picker {
+    border: 2px solid var(--text-color-light);
+    background: none;
+    border-radius: var(--mb-1);
+    color: var(--text-color);
+    outline: none;
+    padding: var(--mb-1);
+  }
+  

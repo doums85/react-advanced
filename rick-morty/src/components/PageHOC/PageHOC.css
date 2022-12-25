@@ -1,0 +1,110 @@
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.5rem 0 0;
+    text-align: center;
+    background-color: var(--container-color);
+    transition: 0.4s;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    z-index: var(--z-fixed);
+  }
+}
+
+.nav__item {
+  margin-bottom: var(--mb-3);
+}
+.nav__link,
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+.nav__logo:hover {
+  color: var(--first-color);
+}
+.nav__link {
+  transition: 0.3s;
+}
+.nav__link:hover {
+  color: var(--first-color);
+}
+.nav__toggle {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.nav .show-menu {
+  top: calc(var(--header-height) + 1rem);
+}
+.nav a {
+  cursor: pointer;
+}
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  background: rgba(218, 37, 53, 0.5);
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  visibility: visible;
+  bottom: 1.5rem;
+}
+.scrolltop:hover {
+  background-color: var(--first-color);
+}
+.scrolltop__icon {
+  font-size: 1.5rem;
+  color: var(--body-color);
+}
+
+.white {
+  color: #fff;
+}
+
+.footer {
+  min-height: calc(100% - (var(--header-height)));
+  padding: 1rem 0;
+  background-color: var(--first-color);
+}
+
+.footer p {
+  text-align: center;
+  color: var(--body-color);
+  font-size: var(--small-font-size);
+}
+
+/*===== ACTIVE NAVLINK =====*/
+.nav__link.active {
+  position: relative;
+}
+.nav__link.active::before {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+}
+
+main {
+  margin-top: calc(var(--header-height) + 2rem);
+}

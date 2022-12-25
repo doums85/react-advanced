@@ -1,0 +1,30 @@
+.search {
+  width: 100%;
+  height: 4rem;
+  position: relative;
+  margin-bottom: var(--mb-4);
+}
+
+.search__label {
+  position: absolute;
+  top: -0.75rem;
+  left: 1.25rem;
+  font-size: var(--small-font-size);
+  background-color: var(--body-color);
+  z-index: var(--z-tooltip);
+}
+
+.search__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--text-color-light);
+  background: none;
+  color: var(--text-color);
+  outline: none;
+  padding: var(--mb-3);
+  border-radius: var(--mb-2);
+  z-index: 1;
+}

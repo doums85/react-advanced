@@ -1,0 +1,53 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mb-1);
+}
+
+.filter__select {
+  display: flex;
+  align-items: center;
+  gap: var(--mb-2);
+  padding-bottom: 1rem;
+}
+
+.filter__select--clear {
+  background-color: crimson;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.filter__select--name {
+  color: var(--title-color);
+  text-transform: capitalize;
+  padding: 0.25rem 0.75rem;
+  font-weight: var(--font-medium);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.filter__select--name.mixitup-control-active,
+.filter__options--item.active {
+  background-color: var(--first-color);
+  color: var(--body-color);
+}
+
+.filter__options {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--mb-1);
+}
+
+.filter__options--item {
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.filter__options--name {
+  font-size: var(--small-font-size);
+}
